@@ -57,9 +57,9 @@ div.tooltip2 {
   
 <script>
 jQuery(function() {
-				//console.log(d3v3)
-  			const width = 960;
-				const height = 470;
+		//console.log(d3v3)
+  		const width = 1500;
+		const height = 600;
   			
         var svg = d3v3.select("body").append("svg")
             // .attr("class", "svgback")
@@ -67,8 +67,8 @@ jQuery(function() {
             .attr("height", height);
 
         var projection = d3v3.geo.mercator()
-            .center([121, 23.5])
-            .scale(6000);
+            .center([118.5, 24])
+            .scale(6800);
 
         var path = d3v3.geo.path()
             .projection(projection);
@@ -82,7 +82,7 @@ jQuery(function() {
             var g = svg.append("g");
           
             // load and display the Spot
-            d3v3.csv("https://raw.githubusercontent.com/oao519p/Data-Visualization-Final/main/spot.csv", function(error, data) {
+             d3v3.csv("https://raw.githubusercontent.com/oao519p/Data-Visualization-Final/main/spot.csv", function(error, data) {
                 g.selectAll("circle")
                    .data(data)
                    .enter()
