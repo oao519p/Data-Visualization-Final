@@ -345,7 +345,7 @@
                      .duration(100)		
                      .style("opacity", 0);	
               		location = datum.code;
-              		d3$1.csv('https://raw.githubusercontent.com/oao519p/Data-Visualization-Final/main/data3.csv').then( (data) => {
+              		d3$1.csv('https://raw.githubusercontent.com/oao519p/Data-Visualization-Final/main/data-4.csv').then( (data) => {
    									
                     console.log(location);
                     data = data.filter(d => d[location] == 1);
